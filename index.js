@@ -1,7 +1,7 @@
 const express = require( 'express' ),
     app = express(),
     bodyParser = require( 'body-parser' ),
-    port = 3000,
+    port = 3004,
     path = require( 'path' ),
     user = require( './controllers/users' ).makeObject();
 
