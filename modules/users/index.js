@@ -46,7 +46,7 @@ class Users {
                     reject( error )
                 }
                 if ( twt.users && Array.isArray( twt.users ) && twt.users.length ) {
-                    const userDetails = lo.map( twt.users, item => lo.pick( item, [ 'id', 'name', 'screen_name' ] ) );
+                    const userDetails = lo.map( twt.users, item => lo.pick( item, [ 'id', 'name', 'screen_name', 'followers_count'] ) );
                     resolve( userDetails )
                 }
             } );
