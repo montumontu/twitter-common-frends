@@ -12,7 +12,7 @@ $("form#data").submit(function (e) {
     
 
     $.ajax({
-        url: `https://floating-sierra-31825.herokuapp.com/twitter/mutual/friends/get?username1=${user1}&username2=${user2}`,
+        url: `http://localhost:3004/twitter/mutual/friends/get?username1=${user1}&username2=${user2}`,
         type: 'GET',
         crossDomain: true,
         contentType: "application/json",
