@@ -1,7 +1,8 @@
 const express = require( 'express' ),
     app = express(),
     bodyParser = require( 'body-parser' ),
-    port = process.env.PORT  || 3004,
+    port = process.env.PORT  || 3000,
+    host = "0.0.0.0",
     path = require( 'path' ),
     user = require( './controllers/users' ).makeObject();
 
@@ -16,6 +17,6 @@ app.get('/', (req, res) => {
 
 app.get('/twitter/mutual/friends/get:username1?:username2?', user.getMutualFriends);
 
-app.listen(port, () => {
+app.listen( port, () => {
     console.log('Server is running on port:', port);    
 });

@@ -9,9 +9,10 @@ $("form#data").submit(function (e) {
 
     let user1 = document.querySelector('.input1').value;
     let user2 = document.querySelector('.input2').value;
+    
 
     $.ajax({
-        url: `http://localhost:3000/twitter/mutual/friends/get?username1=${user1}&username2=${user2}`,
+        url: `https://floating-sierra-31825.herokuapp.com/twitter/mutual/friends/get?username1=${user1}&username2=${user2}`,
         type: 'GET',
         crossDomain: true,
         contentType: "application/json",
