@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #666;
+}
+header{
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 10px;
+}
+h3{
+    margin: 0 auto;
+    text-align: center;
+}
+form{
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.35);
+    width: 2000px;
+    height: 2000px;
+}
+.input-field{
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+}
+.input{
+    margin: 35px auto 10px;
+    display: table;
+    align-self: center
+}
+form h3{
+    color: #000;
+    margin: 10px 0;
+}
+.btn{
+    background-color: red;
+    color: #fff;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.success-btn{
+    background-color: dodgerblue;
+    padding: 10px;
+    margin:0 auto;
+    display: table;
+    align-self: center
+}
+
+.input1 {
+    display: block;
+    padding: 10px;
+    margin-bottom: 80px; 
+    text-align: justify;
+    margin-top: 90px; 
+}
+
+.input2 {
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: -90px; 
+}
+
+.draw_table {
+    align-self: center;
+    margin-left: 700px;
+    margin-top: 50px
+}
