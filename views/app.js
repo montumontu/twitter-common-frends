@@ -18,7 +18,7 @@ $("form#data").submit(function (e) {
         contentType: "application/json",
         success: function (data) {
             alert('Hurray, Request Processed Successfully');
-            var trHTML = '<tr> <th>user Id</th> <th>User Name</th> <th>User screen name</th></tr>'
+            var trHTML = '<tr> <th>user Id</th> <th>User Name</th> <th>User screen name</th><<th>Followers Count</th>/tr>'
             $.each(data.response, function (i, item) {
                 trHTML += '<tr><td>' + item.id + '</td><td>' + item.name + '</td><td>' + item.screen_name + '</td><<td>' + item.followers_count + '</td></tr>';
             });
